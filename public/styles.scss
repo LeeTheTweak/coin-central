@@ -1,5 +1,8 @@
 @import "variables";
 
+html {
+    height: 100%;
+}
 * {
     box-sizing: border-box;
 }
@@ -55,10 +58,12 @@ body {
         }
     }
 }
+/* The Header section */
 header {
     margin-left: 280px;
     padding: 10px;
     background: $white;
+    border-bottom: 1px solid $darkGrey;
 
     .search-area {
         .fas {
@@ -126,7 +131,43 @@ header {
         }
     }
 }
-
+/* The Main Contents Area */
 .mainContents {
+    margin-left: 280px;
+    padding: 20px;
+    width: auto;
 
+    .chart {
+        width: 100%;
+        height: 500px;
+        background-color: $white;
+        border: 1px solid $darkGrey;
+
+        h3 {
+            text-align: center;
+            font-weight: 300;
+        }
+        h1 {
+            text-align: center;
+            font-size: 5rem;
+            margin: 0;
+            padding: 0;
+            color: $darkBlue;
+        }
+    }
+    .miniChartArea {
+        margin-top:30px;
+        background-color: $white;
+        border: 1px solid $darkGrey;
+
+        .miniTable {
+            padding: 10px;
+            font-size: 100%;
+
+            .activeMini {
+                color: $darkBlue;
+                font-size: 1.5rem;
+            }
+        }
+    }
 }

@@ -1,3 +1,6 @@
+html {
+  height: 100%; }
+
 * {
   box-sizing: border-box; }
 
@@ -43,10 +46,12 @@ body {
         position: relative;
         top: 2px; }
 
+/* The Header section */
 header {
   margin-left: 280px;
   padding: 10px;
-  background: white; }
+  background: white;
+  border-bottom: 1px solid #cfcfcf; }
   header .search-area {
     display: inline-block; }
     header .search-area .fas {
@@ -100,5 +105,35 @@ header {
         display: inline-block; }
     header .user-area .fas {
       color: #0663CA; }
+
+/* The Main Contents Area */
+.mainContents {
+  margin-left: 280px;
+  padding: 20px;
+  width: auto; }
+  .mainContents .chart {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    border: 1px solid #cfcfcf; }
+    .mainContents .chart h3 {
+      text-align: center;
+      font-weight: 300; }
+    .mainContents .chart h1 {
+      text-align: center;
+      font-size: 5rem;
+      margin: 0;
+      padding: 0;
+      color: #074a91; }
+  .mainContents .miniChartArea {
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid #cfcfcf; }
+    .mainContents .miniChartArea .miniTable {
+      padding: 10px;
+      font-size: 100%; }
+      .mainContents .miniChartArea .miniTable .activeMini {
+        color: #074a91;
+        font-size: 1.5rem; }
 
 /*# sourceMappingURL=styles.css.map */
