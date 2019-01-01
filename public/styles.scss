@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background: $lightGrey;
 }
-
+/* The Side Bar */
 #sideMenu {
     background: $lightBlue;
     width: 280px;
@@ -105,7 +105,7 @@ header {
                 }
             }
             .user-image {
-                background-image: url("public\imgs\johnathan.jpg");
+                background-image: url("../public/imgs/johnathan.jpg");
                 background-repeat: no-repeat; 
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
@@ -125,4 +125,8 @@ header {
             color: $lightBlue;
         }
     }
+}
+
+.mainContents {
+
 }
