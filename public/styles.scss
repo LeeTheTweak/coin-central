@@ -20,6 +20,7 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
+    position: fixed;
 
     #title {
         padding-top: 50px;
@@ -155,18 +156,67 @@ header {
             color: $darkBlue;
         }
     }
+    /* The Mini chart area*/
     .miniChartArea {
         margin-top:30px;
         background-color: $white;
         border: 1px solid $darkGrey;
 
-        .miniTable {
+        .miniTableHeader {
             padding: 10px;
             font-size: 100%;
 
             .activeMini {
                 color: $darkBlue;
                 font-size: 1.5rem;
+            }
+        }
+
+        .miniChartSection {
+            border: 1px solid $darkGrey;
+
+            tr {
+               
+                h3 {
+                    display: inline-block;
+                    position: relative;
+                    top: -15px;
+                }
+                td {
+                    border-right: 1px solid $darkGrey;
+                }
+                .bitcoinMiniChart {
+                    td {
+                        border: none !important;
+                        img {
+                            width: 50px;
+                        }
+                    }
+                }
+                .litecoinMiniChart {
+                    td {
+                        border: none !important;
+                        img {
+                            width: 50px;
+                        }
+                    }
+                }
+                .ethereumMiniChart {
+                    td {
+                        border: none !important;
+                        img {
+                            width: 50px;
+                        }
+                    }
+                }
+                .digibyteMiniChart {
+                    td {
+                        border: none !important;
+                        img {
+                            width: 50px;
+                        }
+                    }
+                }
             }
         }
     }

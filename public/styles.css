@@ -17,7 +17,8 @@ body {
   width: 280px;
   position: absolute;
   top: 0;
-  bottom: 0; }
+  bottom: 0;
+  position: fixed; }
   #sideMenu #title {
     padding-top: 50px;
     text-align: center; }
@@ -110,7 +111,8 @@ header {
 .mainContents {
   margin-left: 280px;
   padding: 20px;
-  width: auto; }
+  width: auto;
+  /* The Mini chart area*/ }
   .mainContents .chart {
     width: 100%;
     height: 500px;
@@ -129,11 +131,35 @@ header {
     margin-top: 30px;
     background-color: white;
     border: 1px solid #cfcfcf; }
-    .mainContents .miniChartArea .miniTable {
+    .mainContents .miniChartArea .miniTableHeader {
       padding: 10px;
       font-size: 100%; }
-      .mainContents .miniChartArea .miniTable .activeMini {
+      .mainContents .miniChartArea .miniTableHeader .activeMini {
         color: #074a91;
         font-size: 1.5rem; }
+    .mainContents .miniChartArea .miniChartSection {
+      border: 1px solid #cfcfcf; }
+      .mainContents .miniChartArea .miniChartSection tr h3 {
+        display: inline-block;
+        position: relative;
+        top: -15px; }
+      .mainContents .miniChartArea .miniChartSection tr td {
+        border-right: 1px solid #cfcfcf; }
+      .mainContents .miniChartArea .miniChartSection tr .bitcoinMiniChart td {
+        border: none !important; }
+        .mainContents .miniChartArea .miniChartSection tr .bitcoinMiniChart td img {
+          width: 50px; }
+      .mainContents .miniChartArea .miniChartSection tr .litecoinMiniChart td {
+        border: none !important; }
+        .mainContents .miniChartArea .miniChartSection tr .litecoinMiniChart td img {
+          width: 50px; }
+      .mainContents .miniChartArea .miniChartSection tr .ethereumMiniChart td {
+        border: none !important; }
+        .mainContents .miniChartArea .miniChartSection tr .ethereumMiniChart td img {
+          width: 50px; }
+      .mainContents .miniChartArea .miniChartSection tr .digibyteMiniChart td {
+        border: none !important; }
+        .mainContents .miniChartArea .miniChartSection tr .digibyteMiniChart td img {
+          width: 50px; }
 
 /*# sourceMappingURL=styles.css.map */
